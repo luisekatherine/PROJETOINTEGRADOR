@@ -10,12 +10,42 @@
 }
 
 <body>
-    <h1>Bem vinda(o) ao Elas te levam!</h1>
-    <p>Aqui inicia seu grande sonho em viajar para fora do país, fazer intercâmbio e planejar sua viagem, do início ao fim!</p>
-    <img src="~/images/home1.png" alt="imagem">
-    <img src="~/images/home2.png" alt="imagem">
-    <p>Com um time especialmente especializado, você terá consultoria online a hora que mais se adequar aos seus horários!</p>
-    <p>Gostou da idéia e quer saber um pouquinho mais sobre nós?</p>
-    <a asp-action="PaginaInicial">Clique aqui!</a>
+    <header>
+        <h1>Bem vinda(o) ao Elas te levam!</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <img src="~/images/home-1.png" alt="imagem" class="img-fluid" width="100%">
+            </div>
+            <div class="col-6">
+                <img src="~/images/home-2.png" alt="imagem" class="img-fluid" width="100%">
+            </div>
+        </div>
+    </div>
+        <div class="destaques">
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-4" id="maior">
+                            <a href="http://localhost:5000/Home/Agendamento"><img src="~/images/time.svg" alt="Relógio" class="img-fluid" width="100%" /></a>
+                            <p class="detalhe-titulo">No seu tempo</p>
+                            <span class="detalhe">Com um time especialmente especializado, aqui você terá consultoria online a hora que mais se adequar aos seus horários! Vamos agendar?</span>
+                        </div>
+                        <div class="col-4" id="menor1">
+                            <a href="http://localhost:5000/Home/PaginaInicial"><img src="~/images/aboutus.svg" alt="Meninas" class="img-fluid" /></a>
+                            <p class="detalhe-titulo">Sobre nós</p>
+                            <span class="detalhe">Quer conhecer um pouco mais nossa história e como surgiu o projeto?</span>
+                        </div>
+                        <div class="col-4" id="menor2">
+                            <a href="http://localhost:5000/Home/Duvidas"><img src="~/images/questions.svg" alt="Dúvidas" class="img-fluid" /></a>
+                            <p class="detalhe-titulo">Está com dúvidas?</p>
+                            <span class="detalhe">Aqui temos uma listinha com as principais dúvidas que iremos sanar durante a consultoria. Vem ver!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
 </body>
 </html>
