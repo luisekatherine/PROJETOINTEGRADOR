@@ -9,12 +9,16 @@
 }
 .cabeçalho{
     font-family: 'Sacramento', cursive;
-    font-size: 20px;
-    color: rgb(4, 0, 85);
+    color: rgb(8, 2, 110);
+    font-size: 22px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
+    background: rgb(255, 142, 247);
+    margin: 10px;
+    box-shadow: 4px 4px 4px rgba(255, 254, 254, 0.25);
+    text-decoration: none;
+    list-style: none;
 }
 header nav{
     display: flex;
@@ -31,6 +35,13 @@ header nav ul li a{
     font-size: 22px;
     color: white;
 }
+.cabeçalho-logo {
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
 body {
     background-color: rgba(214, 214, 214, 0.93);
 }
@@ -72,16 +83,4 @@ padding-top: 130px;
 .detalhe{
     text-align: center;
     color: rgb(147, 86, 43);
-}
-
-header
-{
-    min-height:4em;
-    background-color: white;
-    margin: 0px;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    box-shadow: 4px 4px 4px rgba(255, 254, 254, 0.25);
-    border-radius: 30px;
 }
