@@ -14,20 +14,19 @@
         <nav>
             <ul>
                 <li>
-                    <a href="http://localhost:5000/"><img class="cabeçalho-logo" src="~/images/Logotipo.png" width="120px"></a>
+                    <a href="http://localhost:5000/"><img class="cabeçalho-logo" src="~/images/Logo.png"></a>
                 </li>
                 <li>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PaginaInicial">Sobre nós</a>
+                    <a class="nav-link text-darksalmon" asp-area="" asp-controller="Home" asp-action="PaginaInicial">Sobre nós</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Duvidas">Dúvidas?</a>
+                <li>
+                    <a class="nav-link text-darksalmon" asp-area="" asp-controller="Home" asp-action="Agendamento">Agendar consultoria</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Agendamento">Agendar consultoria</a>
+                <li>
+                    <a class="nav-link text-darksalmon" asp-area="" asp-controller="Home" asp-action="ListaAgendamento">Listar marcações</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ListaAgendamento">Listar marcações</a>
+                <li>
+                    <a class="nav-link text-darksalmon" asp-area="" asp-controller="Home" asp-action="Duvidas">Dúvidas</a>
                 </li>
             </ul>
         </nav>
@@ -38,10 +37,15 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - PROJETOINTEGRADOR -
+    <footer>
+        <div class="border-top footer text-muted">
+            <div class="container">
+            &copy; Elas te levam
+            Email: contato@elastelevam.com.br
+            Whatsapp: +55 51 9 9999-9999
         </div>
+        </div>
+        
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

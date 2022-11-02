@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -9,34 +10,30 @@
 }
 .cabeçalho{
     font-family: 'Sacramento', cursive;
-    color: rgb(8, 2, 110);
-    font-size: 22px;
+    font-size: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: rgb(255, 142, 247);
-    margin: 10px;
-    box-shadow: 4px 4px 4px rgba(255, 254, 254, 0.25);
+    background:  rgba(94, 94, 94, 0.93);
     text-decoration: none;
     list-style: none;
-}
-header nav{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
 }
 header nav ul{
     display: flex;
-    justify-content: space-between;
-    gap: 120px;
     list-style: none;
+    gap: 80px;
 }
 header nav ul li a{
     text-decoration: none;
-    font-size: 22px;
-    color: white;
+    margin-top: 30px;
+    color: cornsilk;
 }
 .cabeçalho-logo {
-    height: 120px;
+    height: 100px;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -46,9 +43,8 @@ body {
     background-color: rgba(214, 214, 214, 0.93);
 }
 h1 {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Cabin Sketch', cursive;
     text-align: center;
-    font-size: 55px;
     color: rgb(147, 86, 43);
 }
 .titulo{
@@ -83,4 +79,13 @@ padding-top: 130px;
 .detalhe{
     text-align: center;
     color: rgb(147, 86, 43);
+}
+
+
+
+
+footer{
+    margin-top: 20px;
+    font-size: 15px;
+    color:slategray
 }
