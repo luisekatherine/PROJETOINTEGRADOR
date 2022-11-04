@@ -12,11 +12,36 @@
 <body>
     <h1 style="margin-top: 55px;" >@ViewData["Title"]</h1>
 
-<li>Não sabe quais documentos são necessários para onde você quer viajar?</li>
-<li>Está em dúvida da quantia de reserva econômica vai precisar?</li>
-<li>Quer encontrar um grupo de meninas/meninos que estão indo para o mesmo destino que você?</li>
-<li>Ônibus ou avião? Hotel ou hostel? E sobre transfer?</li>
-<p>Não se preocupe, não! Aqui temos todas as respostas pra essas e outras perguntas!</p>
-<p>Marque um horário conosco e realize suas consultorias na comodidade do seu lar! <a asp-action="Agendamento">Clique aqui para agendar!</a>  </p>
+    <p style="text-align: center; font-size: 30px; color: rgb(147, 86, 43); font-family: 'Sacramento';">Não se preocupe, não! Aqui temos todas as respostas pra essas e outras perguntas!</p>
+        <div class="destaques">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="~/images/documentos.jpg" alt="Documentos" class="img-fluid" width="100%" style="border-radius: 20%;"/>
+                            <p class="detalhe-titulo">Documentos</p>
+                            <span class="detalhe">Não sabe quais documentos são necessários para onde você quer viajar?</span>
+                        </div>
+                        <div class="col-3">
+                            <img src="~/images/money.jpg" alt="Dinheiro" class="img-fluid" style="border-radius: 20%;" />
+                            <p class="detalhe-titulo">Financeiro</p>
+                            <span class="detalhe">Está em dúvida da quantia de reserva econômica vai precisar?</span>
+                        </div>
+                        <div class="col-3">
+                            <img src="~/images/friends.jpg" alt="Amigos" class="img-fluid" style="border-radius: 20%;"/>
+                            <p class="detalhe-titulo">Amigos</p>
+                            <span class="detalhe">Quer encontrar um grupo legalzão de viajantes que estão indo para o mesmo destino que você?</span>
+                        </div>
+                        <div class="col-3">
+                            <img src="~/images/airplane.jpg" alt="Avião" class="img-fluid" style="border-radius: 20%;"/>
+                            <p class="detalhe-titulo">Transporte</p>
+                            <span class="detalhe">Ônibus ou avião? Hotel ou hostel? E sobre transfer ou táxi local? Tudo isso a gente te explica!</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr class="solid">
+                <hr class="solid">
+                <p style="text-align: center; font-size: 18px; color: rgb(147, 86, 43); font-family: 'Red Hat Text'; margin-top: 10px">Marque um horário conosco e realize suas consultorias na comodidade do seu lar! <a asp-action="Agendamento" style="color: rgb(109, 63, 30) ;">Clique aqui para agendar!</a>  </p>
+
 </body>
 </html>
