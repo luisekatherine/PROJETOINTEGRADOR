@@ -41,6 +41,10 @@ header nav ul li a{
 
 body {
     background-color: rgba(214, 214, 214, 0.93);
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    
 }
 h1 {
     font-family: 'Cabin Sketch', cursive;
@@ -82,7 +86,7 @@ padding-top: 130px;
 }
 hr.solid {
   border-top: 6px solid slategray;
-  size: 7px;
+  size: 3px;
 }
 
 
@@ -168,7 +172,7 @@ footer{
   
   /*FOrmulario de agendamento*/
   .container3 {
-    background-color:rgb(197, 142, 103);
+    background-color: rgba(192, 192, 192, 0.93);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 500px;
@@ -176,7 +180,7 @@ footer{
     overflow: hidden;
   }
   .header {
-    background-color:rgb(151, 97, 58);
+    background-color: rgba(175, 175, 175, 0.93);
     padding: 10px;
   }
   .partiuagendar{
@@ -187,10 +191,7 @@ footer{
     margin-top: 5px;
   }
   .form {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px;
   }
   
   .form-control {
@@ -201,9 +202,8 @@ footer{
 
   
   .form-control label {
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 20px;
-    text-align: left;
+    margin-bottom: 5px;
+    display: inline-block;
   }
   
   .form-control input {

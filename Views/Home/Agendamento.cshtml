@@ -1,65 +1,45 @@
 @model PreAgendamento
 @{
-    ViewData["Title"] = "Agendar";
+    ViewData["Title"] = "Agende conosco";
 }
-<h1 style="margin-top: 55px;">@ViewData["Title"]</h1>
+<h1 style="margin-top: 55px; text-align: left">@ViewData["Title"]</h1>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/site.css">
 </head>
-
 <body>
-        <div class="container3">
-            <div class="header">
-                <p class="partiuagendar">Partiu agendar?</p>
-            </div>
-            <form id="form" class="form">
-                <div class="form-control">
-                    <label asp-for="Nome">Nome</label>
-                    <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome completo..." />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensagem de erro</small>
-                </div>
-                <div class="form-control">
-                    <label asp-for="Telefone">Telefone</label>
-                    <input type="number" id="Telefone" name="Telefone" placeholder="Digite seu telefone:" required />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensagem de erro</small>
-                </div>
-                <div class="form-control">
-                    <label asp-for="Destino">Destino</label>
-                    <input type="text" id="Destino" name="Destino" placeholder="Digite o destino desejado:" required />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensagem de erro</small>
-                </div>
-                <div class="form-control">
-                    <label asp-for="DataDesejada">Data e horário</label>
-                    <input type="text" id="DataDesejada" name="DataDesejada" placeholder="Escolha a data e hora"
-                        required />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensagem de erro</small>
-                </div>
-                <div class="form-control">
-                    <label asp-for="Passaporte">Você tem passaporte?</label>
-                    <input type="text" id="Passaporte" name="Passaporte" placeholder="Possui passaporte?" required />
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fas fa-check-circle"></i>
-                    <small>Mensagem de erro</small>
-                </div>
-                <button type="submit" onclick="checkInputs()">Agendar consultoria</button>
-            </form>
-        </div>
-        <br>
+    <div>
+<table>
+    <tr>
+<form method="post">
+    <td>
+<label asp-for="Nome">▫ Nome</label>
+<input asp-for="Nome" placeholder="Digite seu nome:" class="col-12" style="border-radius: 10px;" required>
+<br>
+<label asp-for="Telefone">▫️ Telefone</label>
+<input asp-for="Telefone" placeholder="Digite seu telefone:" class="col-12" style="border-radius: 10px;" required>
+<br>
+<label asp-for="Destino">▫️ Destino</label>
+<input asp-for="Destino" placeholder="Digite o destino desejado:" class="col-12" style="border-radius: 10px;" required>
+<br>
+<label asp-for="DataDesejada">▫️ Data e hora</label>
+<input asp-for="DataDesejada" placeholder="Escolha a data e hora" class="col-12" style="border-radius: 10px;" required>
+<br>
+<label asp-for="Passaporte">▫️ Passaporte</label>
+<input asp-for="Passaporte" placeholder="Possui passaporte?" class="col-12" style="border-radius: 10px;" required>
+<br>
+<br>
+<input type="submit" value="Agendar consultoria"  style="border-radius: 10px; padding:5px; background: rgb(205, 126, 69)">
+</form>
+    </td>
+    </tr>
+    </div>
+</table>
 </body>
-
 </html>

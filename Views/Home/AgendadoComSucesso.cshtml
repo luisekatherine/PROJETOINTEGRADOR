@@ -3,21 +3,29 @@
 }
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="margin-top: 55px;">
-    <p>Seu agendamento foi realizado com sucesso!</p>
-    <p>Para agendar mais um horário, <a asp-action="Agendamento">clique aqui!</a>  </p>
-    <p>Para visualizar seu agendamento, <a asp-action="ListaAgendamento"> clique aqui! </a></p>     
+
+<body>
+    <div class="row" style="margin-top: 55px;">
+        <div class="col-3">
+            <img src="~/images/ok.svg" alt="ok" width="40px"/>
+        </div>
+        <div class="col-9">
+            <p>Seu agendamento foi realizado com sucesso!</p>
+        </div>
+
+        <hr class="solid">
+                <p style="text-align: center; font-size: 18px; color: rgb(147, 86, 43); font-family: 'Red Hat Text'; margin-top: 10px">Para agendar mais um horário, <a asp-action="Agendamento">clique aqui!</a></p>
+                <hr class="solid">
+                <br>
+                <p style="text-align: center; font-size: 18px; color: rgb(147, 86, 43); font-family: 'Red Hat Text'; margin-top: 10px">Para visualizar seu agendamento, <a asp-action="ListaAgendamento"> clique aqui! </a></p>
+                <hr class="solid">
+        <hr class="solid" style="margin-top: 55px;">
 </body>
+
 </html>
-
-
-
-
-
-
-
